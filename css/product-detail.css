@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400;1,700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container-x {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60vh;
+
+  width: 80%;
+  margin: 100px auto;
+}
+
+.x-child-one,
+.x-child-two {
+  width: 48%;
+}
+
+.x-child-one {
+  padding: 50px;
+}
+
+.x-child-one-child {
+  background-color: #f2f2f2;
+  height: 55vh;
+  position: relative;
+  border-radius: 8px;
+}
+
+.x-child-one-child img {
+  position: relative;
+  top: 20%;
+  left: 30%;
+  height: 35vh;
+}
+
+.x-child-two {
+  padding: 35px;
+}
+
+.x-child-two h1,
+.x-child-two p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.price {
+  color: #ff5500;
+}
+
+.x-child-two-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.x-child-two-related {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related {
+  width: 32%;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.related:hover {
+  scale: 1.02;
+}
+
+.related img {
+  position: relative;
+  left: 20%;
+  height: 120px;
+}
+
+.wrapper {
+  width: 80%;
+  height: 42vh;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button[type="submit"] {
+  background-color: #000;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #222;
+  scale: 1.05;
+  transition: 0.8s;
+}
+
+form {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-x {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-x {
+    flex-direction: column;
+  }
+
+  .x-child-one,
+  .x-child-two {
+    margin: 15px auto;
+    width: 75%;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+  .container-x {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .x-child-one-child img {
+    left: 20%;
+  }
+
+  .x-child-one,
+  .x-child-two {
+    margin: 15px 0;
+    width: 90%;
+  }
+
+  .x-child-one {
+    padding: 15px;
+  }
+
+  .x-child-two {
+    padding: 10px;
+  }
+
+  .des {
+    font-size: 14px;
+  }
+
+  .x-child-two-name h1 {
+    font-size: 25px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400;1,700&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-img {
+  flex-basis: 35%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.product-info {
+  flex-basis: 60%;
+  padding: 1rem;
+}
+
+.product-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .description {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.size-options,
+.color-options {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+
+
+
+button[type="submit"] {
+  background-color: #000;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #222;
+  scale: 1.05;
+  transition: 0.8s;
+}
+
+.related-products {
+  margin-top: 3rem;
+}
+
+.related-products h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex-basis: calc(33.33% - 1rem);
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product:last-child {
+  margin-right: 0;
+}
+
+.product a {
+  display: block;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product .price {
+  font-size: 1.2rem;
+}
+
+.card-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+  width: 32%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  height: 550px;
+  text-decoration: none;
+
+}
+
+.card-img {
+  height: 150px;
+}
+
+.card-item img {
+  max-width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.card-item h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-item p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-item:hover{
+  scale: 1.05;
+  transition: 1s;
+}
+@media screen and (max-width: 992px) {
+  .product-info .description {
+    font-size: 15px;
+  }
+  .size-options label,
+  .color-options label {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .product-info {
+    flex-basis: 55%;
+  }
+  .product-img {
+    flex-basis: 40%;
+  }
+  button[type="submit"] {
+    font-size: 14px;
+  }
+  .product h3 {
+    font-size: 16px;
+  }
+  .card-item {
+    width: 48%;
+    height: 400px;
+    margin-bottom: 15px;
+  }
+  .card-item img {
+    height: 230px;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .card-item {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-item {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .product {
+    flex-direction: column;
+  }
+  .product img {
+    height: 450px;
+  }
+  .product-info .description {
+    font-size: 15px;
+  }
+  .product h3 {
+    font-size: 14px;
+  }
+  .size-options label,
+  .color-options label {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-item {
+    width: 95%;
+    height: 350px;
+  }
+  .card img {
+    height: 200px;
+  }
+}

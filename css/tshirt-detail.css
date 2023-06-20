@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400;1,700&display=swap");
+
+main {
+  min-height: 100vh;
+}
+img {
+  width: 100%;
+}
+#list {
+  background-color: #fff;
+}
+.header-text{
+  text-transform: capitalize;
+}
+
+.list-item-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 40px auto;
+}
+.list-item-child {
+  width: 30%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 20px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.list-item-child:hover{
+  scale: 1.05;
+  transition: 1s;
+}
+.list-item-child-img {
+  height:79%;
+  width: 100%;
+  /* background-image: url(../img/t1.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.text-wrapper-item {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+  background-color: #fff;
+}
+.link-list {
+  color: black;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.new-text {
+  color: #0589ff;
+  margin: 10px 0;
+  width: 70px;
+
+}
+.text-a {
+  display: block;
+  width: 84%;
+  margin: auto;
+  font-size: 11px;
+  color: black;
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .list-item-child {
+    width: 30%;
+    
+  }
+  .list-item-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .list-item-wrapper {
+    width: 80%;
+  }
+  .list-item-child {
+    width: 30%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .list-item-wrapper {
+    width: 93%;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .link-list {
+    width: 100%;
+  }
+  .list-item-wrapper {
+    width: 95%;
+    margin: auto;
+  }
+  .list-item-child {
+    width: 45%;
+  }
+  .text-a {
+    font-size: 12px;
+  }
+  .link-list {
+    font-size: 12px;
+  }
+}
+
+/* @media screen and (max-width: 592px) {
+  .list-item-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .list-item-child {
+    width: 90%;
+    margin: 20px auto;
+    height: 380px;
+  }
+} */
+
+@media screen and (max-width: 450px) {
+  .list-item-child {
+    width: 85%;
+  }
+}

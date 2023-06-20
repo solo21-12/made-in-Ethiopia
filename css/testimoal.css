@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400;1,700&display=swap");
+
+.testimonials-section {
+  padding: 50px 10px;
+  margin-bottom: 55px;
+}
+
+.container-test {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+
+
+}
+
+.testimonials-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial {
+  flex: 2 0 400px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.testimonial-content {
+  background-color: #f9f9f9;
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 320px;
+}
+
+.testimonial-author {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-author img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  object-position: top;
+  position: relative;
+  top: 0;
+}
+
+.testimonial-author h4 {
+  margin-bottom: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.testimonial-author p {
+  color: #666;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width:576px) {
+  .testimonial-content{
+    width: 80%;
+  }
+}

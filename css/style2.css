@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+* a {
+  text-decoration: none;
+  color: #06c;
+}
+* ul {
+  list-style-type: none;
+}
+.white {
+  color: #fff;
+}
+.gray {
+  color: rgb(235, 231, 231);
+}
+.black {
+  color: #000;
+}
+/* most links property is here */
+.link-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 10px auto;
+  list-style-type: none;
+  font-size: 20px;
+}
+.link-wrapper a:hover,
+.apple-watch-wrapper li a:hover,
+.left-side-wrapper a:hover {
+  text-decoration: underline;
+}

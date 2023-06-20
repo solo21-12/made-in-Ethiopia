@@ -1,0 +1,29 @@
+@font-face {
+  font-family: roboto-light;
+  src: url(../lib/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: oswald;
+  src: url(../lib/Oswald/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(../lib/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(../lib/Roboto/Roboto-Bold.ttf);
+}
+
+.oswald {
+  font-family: oswald;
+}
+.roboto-bold {
+  font-family: roboto-bold;
+}
+.roboto-medium {
+  font-family: roboto-medium;
+}
+.roboto-light {
+  font-family: roboto-light;
+}

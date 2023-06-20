@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400;1,700&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  min-height: 100vh;
+}
+
+form {
+  max-width: 800px;
+  margin: 45px auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 80%;
+  margin-top: 40px;
+}
+
+button[type="submit"]:hover {
+  scale: 1.05;
+  transition: 1s;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form-controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 772px) {
+  .form-controller {
+    flex-direction: column;
+  }
+
+  h2 {
+    margin-left: 40px;
+  }
+  .form-group {
+    margin: auto;
+    width: 80%;
+  }
+
+  button[type="submit"] {
+    width: 95%;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    margin-bottom: 12px;
+  }
+}
