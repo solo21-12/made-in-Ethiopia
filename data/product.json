@@ -111,17 +111,7 @@
         "sizes": "M,L",
         "category": "dress"
     },
-    {
-        "id": 35,
-        "name": "Neguse",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "image": "./images/dress/p.png",
-        "price": 1589.99,
-        "stock": 10,
-        "colors": "Red,Blue,Green",
-        "sizes": "S,M,L",
-        "category": "dress"
-    },
+
     {
         "id": 36,
         "name": "sheba",
@@ -133,17 +123,7 @@
         "sizes": "M,L",
         "category": "dress"
     },
-    {
-        "id": 37,
-        "name": "Dorze sheba",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "image": "./images/dress/p.png",
-        "price": 2984.99,
-        "stock": 5,
-        "colors": "Black,White",
-        "sizes": "M,L",
-        "category": "dress"
-    },
+
     {
         "id": 38,
         "name": "Neguse",
@@ -153,17 +133,6 @@
         "stock": 10,
         "colors": "Red,Blue,Green",
         "sizes": "S,M,L",
-        "category": "dress"
-    },
-    {
-        "id": 39,
-        "name": "sheba",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "image": "./images/dress/j.png",
-        "price": 2244.99,
-        "stock": 5,
-        "colors": "Black,White",
-        "sizes": "M,L",
         "category": "dress"
     },
     {
@@ -243,17 +212,7 @@
         "sizes": "M,L",
         "category": "shirt"
     },
-    {
-        "id": 47,
-        "name": "Dorze",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "image": "./images/shirt/seven.png",
-        "price": 1589.99,
-        "stock": 10,
-        "colors": "Red,Blue,Green",
-        "sizes": "S,M,L",
-        "category": "shirt"
-    },
+
     {
         "id": 48,
         "name": "Neguse",
@@ -377,7 +336,8 @@
     }
 ]
 ,
-  "newProduct": [
+  "newProduct":
+  [
     {
       "id": 25,
       "name": "Ethio Shirt",
@@ -563,17 +523,6 @@
       "quantity": 20,
       "colors": "Yellow,Pink",
       "size": "S,M",
-      "category": "dress"
-    },
-    {
-      "id": 42,
-      "name": "Dorze",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "image": "./images/dress/p.png",
-      "price": 1589.99,
-      "quantity": 10,
-      "colors": "Red,Blue,Green",
-      "size": "S,M,L",
       "category": "dress"
     },
     {
