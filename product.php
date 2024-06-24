@@ -1,10 +1,6 @@
 <?php
-
 include("./data/product.data.php");
-include("./data/productList.data.php");
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,15 +21,13 @@ include("./data/productList.data.php");
   <link rel="stylesheet" href="./css/tshirt-detail.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/fa59f54b37.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
   <nav>
-    <?php
-    include("./template/header.php")
-    ?>
+    <?php include("./template/header.php"); ?>
   </nav>
+
   <main>
     <div class="banner-init">
       <div class="banner-init-text">
@@ -45,22 +39,19 @@ include("./data/productList.data.php");
           sequi consectetur quos eum, natus
         </p>
         <button class="btn btn-blue">
-          <a href="#buy">Buy know</a>
+          <a href="#buy">Buy now</a>
         </button>
       </div>
       <div class="banner-init-empty"></div>
     </div>
-    <div style='width:58%;margin:40px auto'>
 
+    <div style='width:58%;margin:40px auto'>
       <h5 class="big-text-wrapper" style="font-size:25px">Made in Ethiopia</h5>
       <h3 style="color: #2298f8; font-weight:bold; font-size:40px"><?php echo ucfirst($params["category"]); ?></h3>
     </div>
 
     <div class="list-item-wrapper" id="buy">
-      <?php
-      while ($product = mysqli_fetch_assoc($fetured)) :
-      ?>
-
+      <?php foreach ($featured as $product) : ?>
         <a href="/product-details.php?id=<?= $product["id"]; ?>&category=<?= $product["category"]; ?>">
           <div class="list-item-child">
             <div class="list-item-child-img" style="background-image: url(<?= $product["image"]; ?>);"></div>
@@ -79,13 +70,8 @@ include("./data/productList.data.php");
             </div>
           </div>
         </a>
-
-      <?php
-      endwhile;
-      ?>
-
+      <?php endforeach; ?>
     </div>
-
 
     <div class="banner-second">
       <div class="banner-init-text">
@@ -97,7 +83,7 @@ include("./data/productList.data.php");
           sequi consectetur quos eum, natus
         </p>
         <button class="btn btn-blue">
-          <a href="#buy">Buy know</a>
+          <a href="#buy">Buy now</a>
         </button>
       </div>
       <div class="banner-second-empty"></div>
@@ -106,11 +92,9 @@ include("./data/productList.data.php");
   </main>
 
   <footer>
-    <?php
-    include("./template/footer.php")
-    ?>
-
+    <?php include("./template/footer.php"); ?>
   </footer>
+
   <script src="./js/nav.js"></script>
   <script src='./js/home.js'></script>
 </body>

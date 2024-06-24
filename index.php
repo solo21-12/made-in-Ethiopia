@@ -28,25 +28,17 @@ include("./data/index.data.php");
 
 <body>
   <nav>
-    <?php
-    include("./template/header.php")
-    ?>
-
+    <?php include("./template/header.php"); ?>
   </nav>
   <main>
-    <?php
-    include("./template/hero.php")
-
-    ?>
+    <?php include("./template/hero.php"); ?>
 
     <div class="related-products second-wrapper" id="promotion">
 
       <h2 class="Roboto">Our new products</h2>
       <div class="product-list">
 
-        <?php
-        while ($product = mysqli_fetch_assoc($fetured)) :
-        ?>
+        <?php foreach ($fetured as $product) : ?>
 
           <div class="product-card">
             <img class="product-card-image" src="<?= $product["image"]; ?>" alt="Product Image">
@@ -54,18 +46,15 @@ include("./data/index.data.php");
               <div class="product-card-tag">New</div>
             </div>
             <div class="product-card-details">
-              <div class="product-card-title"><?php echo $product['name']; ?></div>
-              <div class="product-card-pri"><?php echo $product['price'] + 256; ?> Birr</div>
-
-              <div class="product-card-price"><?php echo $product['price']; ?> Birr</div>
+              <div class="product-card-title"><?= $product['name']; ?></div>
+              <div class="product-card-pri"><?= $product['price'] + 256; ?> Birr</div>
+              <div class="product-card-price"><?= $product['price']; ?> Birr</div>
               <a href="/product.php?category=<?= $product["category"]; ?>" class="buy-now-button">Buy Now</a>
             </div>
           </div>
 
+        <?php endforeach; ?>
 
-        <?php
-        endwhile;
-        ?>
       </div>
     </div>
 
@@ -105,19 +94,14 @@ include("./data/index.data.php");
       <div class="banner-second-empty"></div>
     </div>
 
-
   </main>
+
   <section>
-    <?php
-
-    include("./template/testimonal.php")
-    ?>
+    <?php include("./template/testimonal.php"); ?>
   </section>
-  <footer>
-    <?php
 
-    include("./template/footer.php")
-    ?>
+  <footer>
+    <?php include("./template/footer.php"); ?>
   </footer>
 
   <script src="./js/main.js"></script>
